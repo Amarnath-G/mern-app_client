@@ -1,18 +1,18 @@
 version: '3.8'
 
 services:
-  client:
+  mern-app_client:
     build: .
-    image: my-client-image
+    image: amarnath2413/mern-app_client
     ports:
       - "3000:3000"  # Host:Container (you can change to 4000:3000 if desired)
     environment:
       - PORT=3000
       - HOST=0.0.0.0
       - REACT_APP_YOUR_HOSTNAME=http://16.170.254.164:5000
-  server:
+  mern-app_server:
     build: .
-    image: my-server-image
+    image: amarnath2413/mern-app_client
     ports:
       - "5000:5000"
     environment:
