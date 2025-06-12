@@ -26,7 +26,7 @@ export default function Create() {
             },
             body: JSON.stringify(newPerson)
         })
-
+// added comment
         if (!response.ok) {
             const message = `An error occurred: ${response.statusText}`
             window.alert(message)
